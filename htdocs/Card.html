@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yeep Rank Card</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+<style>
+body {
+  margin:0;
+  background:#0b0b0d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color:white;
+}
+
+.wrapper {
+  max-width:900px;
+  margin:40px auto;
+  text-align:center;
+}
+
+.search {
+  margin-bottom:20px;
+}
+
+input {
+  padding:10px;
+  width:220px;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  color: #ffffff;
+  background: #171717;
+}
+
+button {
+  padding:10px 14px;
+  margin-left:6px;
+  border:none;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+  font-weight:600;  
+  background:linear-gradient(-165deg, #0b0b0d 0%, #960330 100%);
+}
+
+button:hover {
+  opacity:0.9;
+}
+
+#card {
+  display:flex;
+  justify-content:center;
+}
+
+.profile-card {
+  width:720px;
+  background:linear-gradient(135deg,#0b0b0d,#960330);
+  border-radius:16px;
+  border:#ff004f;
+  padding:24px;
+  box-shadow:0 0 0 3px rgba(255,0,80,0.5);
+}
+
+.header {
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.avatar {
+  width:110px;
+  height:110px;
+  border-radius:12px;
+  object-fit:cover;
+  background:#111;
+}
+
+.header-info h1 {
+  margin:0;
+  font-size:28px;
+}
+
+.title {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+  font-weight:600;
+  color:#ff5fa2;
+}
+
+.title img {
+  width:22px;
+}
+
+.stats {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top:24px;
+  gap:16px;
+  text-align:center;
+}
+
+.stat {
+  background:rgba(0,0,0,0.35);
+  border-radius:12px;
+  padding:14px;
+}
+
+.stat span {
+  display:block;
+  font-size:12px;
+  opacity:0.7;
+}
+
+.stat strong {
+  font-size:20px;
+}
+
+.tiers {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
+  justify-content:center;
+}
+
+.tier {
+  width:64px;
+  text-align:center;
+  font-size:11px;
+}
+
+.tier img {
+  width:100%;
+  border-radius:8px;
+  background: linear-gradient(180deg, transparent, transparent,#960330);
+}
+
+.tier span {
+  display:block;
+  margin-top:4px;
+  opacity:0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="search">
+    <input id="playerInput" placeholder="Enter player name">
+    <button onclick="generateCard()">Find Player Card</button>
+    <button onclick="downloadCard()">Download Card</button>
+  </div>
+
+  <div id="card"></div>
+
+</div>
+
+<!-- 📸 Screenshot library -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+<script>
+
+const players = [
+    
+  { 
+    id:1, 
+    name:"Gambit", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Street Yeep Team", 
+    score:210+180, 
+    rank:"https://yeeplist.page.gd/images/Street.png",  
+    categories:[
+      {cat:"#1 Clynchenator", pos:"210 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#2 Coopter, Owner", pos:"180 Points", img:"https://yeeplist.page.gd/images/coopter.png"},
+      {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+  },
+      {
+    id:2, 
+    name:"The Pirates", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Street Yeep Team", 
+    score:125+52+50+46, 
+    rank:"https://yeeplist.page.gd/images/Street.png",  
+    categories:[
+      {cat:"#1 Im.Mystic", pos:"125 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#2 EnxvinityTXVr", pos:"52 Points", img:"https://yeeplist.page.gd/images/Txvr.jpeg"},
+      {cat:"#3 Ek, Owner", pos:"50 Points", img:"https://yeeplist.page.gd/images/EK.jpeg"},
+      {cat:"#4 Drippy The Drifter", pos:"46 Points", img:"https://yeeplist.page.gd/images/Drippy.jpeg"},
+      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+  },
+            { 
+    id:3, 
+    name:"Cross Guild", 
+    avatar:"https://yeeplist.page.gd/images/Crossguild.jpeg", 
+    title:"Newb Yeep Team", 
+    score:175+34, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",  
+    categories:[
+      {cat:"#1 Frost Da Monk", pos:"175 Points", img:"https://yeeplist.page.gd/images/Frost.png"},
+      {cat:"#2 Hawk Eye Mihawk", pos:"34 Points", img:"https://yeeplist.page.gd/images/Mihawk.jpeg"},
+      {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+  },
+            { 
+    id:4, 
+    name:"Pirate Clan", 
+    avatar:"https://yeeplist.page.gd/images/Pirate_Clan.jpeg", 
+    title:"Newb Yeep Team", 
+    score:81+70+24+22+17, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",  
+    categories:[
+      {cat:"#1 Frostski", pos:"81 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#2 THE_MEMBER", pos:"70 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#3 Mishsquad", pos:"24 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#4 PirateFlameFrags", pos:"22 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#5 RaidenR14", pos:"17 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+    ]
+  },
+            { 
+    id:5, 
+    name:"Mafia", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep Team", 
+    score:70+68, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",  
+    categories:[
+      {cat:"#1 Crystals", pos:"70 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#2 Yeeps Wemmbu", pos:"68 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+  },
+  { 
+    id:1, 
+    name:"Voffi", 
+    avatar:"https://yeeplist.page.gd/images/Voffi.png", 
+    title:"Elite Yeep", 
+    score:10+45+6+30+20+45+10+20, 
+    rank:"https://yeeplist.page.gd/images/Elite.png",  
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Freeze_Tier6.png"},
+      {cat:"Mace PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:"Scythe PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Scythe_Tier5.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  },
+  { 
+    id:2, 
+    name:"Gmonk", 
+    avatar:"https://yeeplist.page.gd/images/Gmonk.png", 
+    title:"Battle Yeep", 
+    score:6+20+0+0+30+0+0+20, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Retired Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"},
+      {cat:"Dagger PvP", pos:"Retired Tier: 4", img:"https://yeeplist.page.gd/images/Bat_Tier4.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Retired Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Retired Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+  { 
+    id:3, 
+    name:"Minty", 
+    avatar:"https://yeeplist.page.gd/images/Minty.png", 
+    title:"Newb Yeep", 
+    score:1+0+1+2+0+0+0+0, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Retired Tier: 10", img:"https://yeeplist.page.gd/images/Tier10.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Retired Tier: 10", img:"https://yeeplist.page.gd/images/Freeze_Tier10.png"},
+      {cat:"Mace PvP", pos:"Retired Tier: 9", img:"https://yeeplist.page.gd/images/Mace_Tier9.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      
+    ]
+  },
+  { 
+    id:4, 
+    name:"Carp", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+0+0+0+0+0+0+10, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Retired Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"}
+    ]
+  },
+  { 
+    id:5, 
+    name:"Dracoo", 
+    avatar:"https://yeeplist.page.gd/images/Dracoo.png", 
+    title:"Newb Yeep", 
+    score:1+2+1+2+1+1+0+6, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Tier10.png"},
+      {cat:"Dagger PvP", pos:"Tier: 9", img:"https://yeeplist.page.gd/images/Bat_Tier9.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Freeze_Tier10.png"},
+      {cat:"Mace PvP", pos:"Tier: 9", img:"https://yeeplist.page.gd/images/Mace_Tier9.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Tier10.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Axe_Tier10.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
+  },
+    
+  { 
+    id:6, 
+    name:"Ek", 
+    avatar:"https://yeeplist.page.gd/images/EK.jpeg", 
+    title:"Battle Yeep", 
+    score:0+0+0+20+0+10+0+20, 
+    team:"The Pirates",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Axe_Tier5.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+    
+  { 
+    id:7, 
+    name:"Frost Da Monk", 
+    avatar:"https://yeeplist.page.gd/images/Frost.png", 
+    title:"Elite Yeep", 
+    score:30+20+10+0+45+60+0+10, 
+    team:"Cross Guild",
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:"Dagger PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Bat_Tier4.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"}
+    ]
+  },
+    
+  { 
+    id:8, 
+    name:"Hawk Eye Mihawk", 
+    avatar:"https://yeeplist.page.gd/images/Mihawk.jpeg", 
+    title:"Street Yeep", 
+    score:30+0+4+0+0+0+0+0, 
+    team:"Cross Guild",
+    rank:"https://yeeplist.page.gd/images/Street.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Freeze_Tier7.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
+    
+  { 
+    id:9, 
+    name:"Drippy The Drifter", 
+    avatar:"https://yeeplist.page.gd/images/Drippy.jpeg", 
+    title:"Street Yeep", 
+    score:0+0+20+6+10+0+0+10, 
+    team:"The Pirates",
+    rank:"https://yeeplist.page.gd/images/Street.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier 4", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
+      {cat:"Mace PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Mace_Tier6.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"}
+    ]
+  },
+    
+  { 
+    id:10, 
+    name:"EnxvinityTXVr", 
+    avatar:"https://yeeplist.page.gd/images/Txvr.jpeg", 
+    title:"Battle Yeep", 
+    score:10+0+0+6+10+20+0+6, 
+    team:"The Pirates",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Mace_Tier6.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Axe_Tier4.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
+  },
+    
+  { 
+    id:11, 
+    name:"Yars", 
+    avatar:"https://yeeplist.page.gd/images/Yars.jpeg", 
+    title:"Street Yeep", 
+    score:20+0+0+0+20+0+0+6, 
+    rank:"https://yeeplist.page.gd/images/Street.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
+  },
+  { 
+    id:12, 
+    name:"kingJaxonVr", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:30+0+0+0+20+0+0+20, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+    
+  { 
+    id:13, 
+    name:"WooperYeepes", 
+    avatar:"https://yeeplist.page.gd/images/Wooper.png", 
+    title:"Divine Yeep", 
+    score:60+45+45+60+60+60+30+45, 
+    rank:"https://yeeplist.page.gd/images/Divine.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:"Mace PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Scythe_Tier3.png"},
+      {cat:"Other PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Credits And Testers", pos:"Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  },
+      { 
+    id:14, 
+    name:"will_baller", 
+    avatar:"https://yeeplist.page.gd/images/Will_Baller.1.jpeg", 
+    title:"Newb Yeep", 
+    score:0+0+0+0+4+4+0+3, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Tier7.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Axe_Tier7.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Tier8.png"}
+    ]
+  },
+    
+      { 
+    id:15, 
+    name:"Xoix", 
+    avatar:"https://yeeplist.page.gd/images/xoix.jpg", 
+    title:"Mythic Yeep", 
+    score:60+30+60+1+60+30+60+45, 
+    rank:"https://yeeplist.page.gd/images/Mythic.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
+      {cat:"Mace PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Mace_Tier10.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:"Scythe PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Other PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Credits And Testers", pos:"Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  },
+    
+      { 
+    id:16, 
+    name:"Im.Mystic", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Master Yeep", 
+    score:30+0+45+20+10+0+0+20, 
+    rank:"https://yeeplist.page.gd/images/Master.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:"Mace PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".F.", pos:"Tier: ", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+    
+  { 
+    id:17, 
+    name:"Yeeps Wemmbu", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:0+10+6+45+0+0+3+4, 
+    team:"Mafia",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Bat_Tier5.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier 6", img:"https://yeeplist.page.gd/images/Freeze_Tier6.png"},
+      {cat:"Mace PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Scythe PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Scythe_Tier8.png"},
+      {cat:"Other PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Tier7.png"}
+    ]
+  },
+    
+  { 
+    id:18, 
+    name:"Crystals", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:0+4+0+6+20+0+20+20, 
+    team:"Mafia",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Bat_Tier7.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Mace_Tier6.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Scythe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+  { 
+    id:19, 
+    name:"Aliens Space", 
+    avatar:"https://yeeplist.page.gd/images/aliens_space.png", 
+    title:"Battle Yeep", 
+    score:20+0+0+0+20+0+20+20, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Scythe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+  { 
+    id:20, 
+    name:"LilTommyVr", 
+    avatar:"https://yeeplist.page.gd/images/liltommyvr.png", 
+    title:"Newb Yeep", 
+    score:6+0+0+0+4+0+0+0, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Tier7.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
+    
+  { 
+    id:21, 
+    name:"Muffin", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+0+0+0+10+6+0+0, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Axe_Tier6.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+    { 
+    id:22, 
+    name:"GoofyGoober", 
+    avatar:"https://yeeplist.page.gd/images/GoofyGoober.png", 
+    title:"War Yeep", 
+    score:45+30+30+6+45+45+30+60, 
+    rank:"https://yeeplist.page.gd/images/War.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
+      {cat:"Mace PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Mace_Tier6.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:"Scythe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Scythe_Tier3.png"},
+      {cat:"Other PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"}
+    ]
+  },
+      { 
+    id:23, 
+    name:"YellowMellow", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:0+0+0+0+60+30+0+0, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+          { 
+    id:24, 
+    name:"Simply Enderman", 
+    avatar:"https://yeeplist.page.gd/images/SimplyEnderman.png", 
+    title:"Newb Yeep", 
+    score:0+4+0+0+2+3+0+0, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Bat_Tier7.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 9", img:"https://yeeplist.page.gd/images/Tier9.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Axe_Tier8.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+                { 
+    id:25, 
+    name:"Arcane.Knight", 
+    avatar:"https://yeeplist.page.gd/images/ArcaneKnight.png", 
+    title:"Battle Yeep", 
+    score:45+0+0+0+45+0+0+0, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+                    { 
+    id:25, 
+    name:"Coopter", 
+    avatar:"https://yeeplist.page.gd/images/coopter.png", 
+    title:"Elite Yeep", 
+    score:60+60+0+0+60+0+0+0,
+    team:"Gambit",
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Credits And Testers", pos:"Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  }, 
+    
+                    { 
+    id:26, 
+    name:"Madd", 
+    avatar:"https://yeeplist.page.gd/images/Madd.jpeg", 
+    title:"Battle Yeep", 
+    score:10+0+60+0+10+0+0+0,
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+                    },
+                    { 
+    id:27, 
+    name:"Evan_The_SalmonKing", 
+    avatar:"https://yeeplist.page.gd/images/Evan_The_SalmonKing.jpeg", 
+    title:"War Yeep", 
+    score:60+60+45+0+10+30+45+45,
+    rank:"https://yeeplist.page.gd/images/War.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:"Scythe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
+      {cat:"Other PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+    ]
+                    }, 
+                    { 
+    id:28, 
+    name:"Clynchenator", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"War Yeep", 
+    score:30+45+45+0+45+45+0+0,
+    team:"Gambit",
+    rank:"https://yeeplist.page.gd/images/War.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+                    { 
+    id:29, 
+    name:"PirateFlameFrags", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:10+6+0+0+0+0+0+6,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Dagger PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Bat_Tier6.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
+  }, 
+                    { 
+    id:30, 
+    name:"Frostski", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:30+0+0+0+6+45+0+0,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+                    { 
+    id:31, 
+    name:"Infiniteskele", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+0+0+6+0+0+0+0,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Mace_Tier6.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  }, 
+                    { 
+    id:32, 
+    name:"RaidenR14", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:3+0+0+0+4+0+0+10,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Tier8.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Tier7.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"}
+    ] 
+  }, 
+                    { 
+    id:33, 
+    name:"Mishsquad", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+0+0+20+0+0+0+4,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Tier8.png"}
+    ]
+  }, 
+                    { 
+    id:34, 
+    name:"Milkshake789_.8", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+10+0+0+0+0+0+6,
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Bat_Tier5.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
+  },
+                    { 
+    id:35, 
+    name:"Jam_The_Yeeper", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Street Yeep", 
+    score:0+10+10+0+10+0+0+0,
+    rank:"https://yeeplist.page.gd/images/Street.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Bat_Tier5.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
+                    { 
+    id:36, 
+    name:"THE_MEMBER", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:0+30+6+0+10+0+20+4,
+    team:"Pirate Clan",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Freeze_Tier6.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Scythe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
+      {cat:"Other PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Tier7.png"}
+    ]
+  },
+                    { 
+    id:37, 
+    name:"ausfirestorm", 
+    avatar:"https://yeeplist.page.gd/images/ausfirestorm.jpeg", 
+    title:"Battle Yeep", 
+    score:45+0+0+0+0+0+0+20,
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
+    ]
+  },
+];
+
+
+function generateCard() {
+  const input = document.getElementById("playerInput").value.trim();
+  const player = players.find(p => p.name.toLowerCase() === input.toLowerCase());
+
+  if (!player) {
+    card.innerHTML = "<p>❌ Player not found ❌</p>";
+    return;
+  }
+
+  document.getElementById("card").innerHTML = `
+    <div class="profile-card">
+      <div class="header">
+        <img class="avatar" src="${player.avatar}">
+        <div class="header-info">
+          <h1>${player.name}</h1>
+          <div class="title">
+            <img src="${player.rank}">
+            ${player.title}
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span>Score: </span><strong>${player.score}</strong></div>
+        <div class="stat"><span>Rank: </span><strong>${player.title.split(" ")[0]}</strong></div>
+        <div class="stat"><span>Team: </span><strong>${player.team}</strong></div>
+      </div>
+
+      <div class="tiers">
+        ${player.categories.map(c => `
+          <div class="tier">
+            <img src="${c.img}">
+            <span>${c.pos}</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function downloadCard() {
+  const card = document.querySelector(".profile-card");
+  if (!card) return alert("❌ Card not found ❌");
+
+  html2canvas(card, { scale:2, backgroundColor:null })
+    .then(canvas => {
+      const a = document.createElement("a");
+      a.download = "player-card.png";
+      a.href = canvas.toDataURL();
+      a.click();
+    });
+}
+</script>
+
+</body>
+</html>
