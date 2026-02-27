@@ -9,29 +9,7 @@ const players = [
     categories:[
       {cat:"Easter Event", pos:"", img:"Loudout | One Perm Potion On Oponent And One Buble Seter For Own" },
     ]
-  },  
-    { 
-    id:1, 
-    name:"player", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Bunny Yeep", 
-    score: 1, 
-    rank:"https://yeeplist.page.gd/images/Newb.png",  
-    categories:[
-      {cat:"Easter Event", pos:"Score: 1", img:"#2" },
-    ]
-  },  
-      { 
-    id:2, 
-    name:"player", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Bunny Yeep", 
-    score: 4, 
-    rank:"https://yeeplist.page.gd/images/Newb.png",  
-    categories:[
-      {cat:"Easter Event", pos:"Score: 4", img:"#1" },
-    ]
-  },  
+ 
 ];
 const yeepsRanks = [
   { img:"LTM's", label:"" },
@@ -48,7 +26,7 @@ const searchInput = document.getElementById("search");
 const sidebar = document.querySelector(".sidebar");
 const wrap = document.querySelector(".wrap");
 
-/* ---------- RENDER ---------- */
+
 function renderList(list){
   leaderboard.innerHTML = "";
 
@@ -88,7 +66,7 @@ function renderList(list){
   });
 }
 
-/* ---------- MODAL ---------- */
+
 function openModal(p){
   document.getElementById("modalAvatar").src = p.avatar;
   document.getElementById("modalName").textContent = p.name;
@@ -125,13 +103,13 @@ function closeModal(){
   document.getElementById("modal").classList.remove("active");
 }
 
-/* ---------- SEARCH ---------- */
+
 searchInput.addEventListener("input", ()=>{
   const q = searchInput.value.toLowerCase();
 
   let baseList = players;
 
-  // 🔒 Respect active category
+
   if (activeCategory) {
     baseList = players.filter(p =>
       p.categories.some(c => c.cat.includes(activeCategory))
@@ -188,7 +166,6 @@ if (!activeCategory) {
   });
 });
 
-/* ---------- THE YEEPS LIST POPUP ---------- */
 const yeepsBtn = document.getElementById("yeeplistBtn");
 const rankPopup = document.getElementById("rankPopup");
 
@@ -216,19 +193,16 @@ yeepsBtn.addEventListener("click", (e) => {
   rankPopup.style.display = "flex";
 });
 
-// close when clicking outside
 document.addEventListener("click", () => {
   rankPopup.style.display = "none";
 });
 
-// prevent closing when clicking inside popup
+
 rankPopup.addEventListener("click", e => e.stopPropagation());
 
-/* ---------- MENU TOGGLE ---------- */
 document.getElementById("menuToggle").onclick = ()=>{
   sidebar.classList.toggle("open");
   wrap.classList.toggle("menu-open");
 };
 
-/* ---------- INITIAL ---------- */
 renderList(players.sort((a,b)=>b.score-a.score));
