@@ -39,7 +39,6 @@ body{
   gap:20px;
 }
 
-/* SIDEBAR */
 .sidebar{
   background:linear-gradient(165deg,var(--panel), #960330);
   border-radius:var(--radius);
@@ -106,7 +105,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
   cursor:pointer;
 }
 
-/* CARDS */
+
 .grid{
   display:flex; 
   flex-direction:column;
@@ -135,7 +134,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
 .player-rank img{width:18px;height:18px;}
 .player-score{font-size:14px;font-weight:800;color:#fff;}
 
-/* Category images on right stacked left */
+
 .categories-row{
   display:flex;
   position:absolute;
@@ -224,7 +223,6 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
   transform:translateY(-1px);
 }
 
-/* MODAL */
 .modal{
   display:none;
   position:fixed;
@@ -268,13 +266,13 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
 footer{text-align:center;margin-top:22px;color:var(--muted);}
 </style>
 </head>
-<!-- YEETS LIST POPUP -->
+
 <div class="rank-popup" id="rankPopup"></div>
 
 <body>
 <div class="wrap">
 
-  <!-- SIDEBAR -->
+
   <aside class="sidebar">
     <div class="brand">
       <img src="https://yeeplist.page.gd/images/PvP_Rank.jpeg" class="logo">
@@ -287,14 +285,13 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
     <nav class="category-list">
       <button class="active" data-cat="all"><img src="https://yeeplist.page.gd/images/PvP_Rank.jpeg" alt="" />Team Rankings</button>
       <button class="external-link-btn"
-        onclick="window.open('https://yeeplist.page.gd','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
+        onclick="window.open('index.html','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
   Player Rankings
 </button>
 
     </nav>
   </aside>
 
-  <!-- MAIN -->
   <section class="main">
 
     <header class="main-head">
@@ -320,7 +317,7 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
   </section>
 </div>
 
-<!-- MODAL -->
+
 <div class="modal" id="modal">
   <div class="modal-card">
     <button class="modal-close" onclick="closeModal()">×</button>
@@ -458,7 +455,7 @@ const searchInput = document.getElementById("search");
 const sidebar = document.querySelector(".sidebar");
 const wrap = document.querySelector(".wrap");
 
-/* ---------- RENDER ---------- */
+
 function renderList(list){
   leaderboard.innerHTML = "";
   list.forEach(p=>{
@@ -487,7 +484,7 @@ function renderList(list){
   });
 }
 
-/* ---------- MODAL ---------- */
+
 function openModal(p){
   document.getElementById("modalAvatar").src = p.avatar;
   document.getElementById("modalName").textContent = p.name;
@@ -511,7 +508,7 @@ function closeModal(){
   document.getElementById("modal").classList.remove("active");
 }
 
-/* ---------- SEARCH ---------- */
+
 searchInput.addEventListener("input", ()=>{
   const q = searchInput.value.toLowerCase();
   const filtered = players.filter(p =>
@@ -520,7 +517,6 @@ searchInput.addEventListener("input", ()=>{
   renderList(filtered);
 });
 
-/* ---------- CATEGORY FILTER ---------- */
 const categoryMap = {
   all: null,
   bat: "Bat PvP",
@@ -558,14 +554,14 @@ document.querySelectorAll(".category-list button").forEach(btn=>{
   });
 });
 
-/* ---------- THE YEEPS LIST POPUP ---------- */
+
 const yeepsBtn = document.getElementById("yeeplistBtn");
 const rankPopup = document.getElementById("rankPopup");
 
 yeepsBtn.addEventListener("click", (e) => {
   e.stopPropagation();
 
-  // toggle popup
+
   if (rankPopup.style.display === "flex") {
     rankPopup.style.display = "none";
     return;
@@ -586,21 +582,18 @@ yeepsBtn.addEventListener("click", (e) => {
   rankPopup.style.display = "flex";
 });
 
-// close when clicking outside
 document.addEventListener("click", () => {
   rankPopup.style.display = "none";
 });
 
-// prevent closing when clicking inside popup
 rankPopup.addEventListener("click", e => e.stopPropagation());
 
-/* ---------- MENU TOGGLE ---------- */
+
 document.getElementById("menuToggle").onclick = ()=>{
   sidebar.classList.toggle("open");
   wrap.classList.toggle("menu-open");
 };
 
-/* ---------- INITIAL ---------- */
 renderList(players.sort((a,b)=>b.score-a.score));
 </script>
 </body>
