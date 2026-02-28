@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>The Yeeps List — Combat Leaderboards</title>
+<title>The Yeeps PvP List</title>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-<meta name="description" content="The Yeeps PvP category lists" />
+<meta name="description" content="The Yeeps PvP lists" />
 <style>
 :root{
   --bg:#0b0b0d;
@@ -38,6 +38,7 @@ body{
   grid-template-columns:1fr;
   gap:20px;
 }
+
 
 .sidebar{
   background:linear-gradient(165deg,var(--panel), #960330);
@@ -104,6 +105,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
   color:var(--muted);
   cursor:pointer;
 }
+
 
 .grid{
   display:flex; 
@@ -266,7 +268,7 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
 <body>
 <div class="wrap">
 
-
+  
   <aside class="sidebar">
     <div class="brand">
       <img src="https://yeeplist.page.gd/images/PvP_Rank.jpeg" class="logo">
@@ -288,12 +290,16 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
       <button data-cat="other"><img src="https://yeeplist.page.gd/images/placeholder.png" alt="" />Other PvP</button>
       <button class="external-link-btn">Other Websites (for pvp)</button>
       <button class="external-link-btn"
-        onclick="window.open('YeepList/teams.html','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
+        onclick="window.open('teams.html','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
   Team Rankings
 </button>
       <button class="external-link-btn"
-        onclick="window.open('https://yeeplist.page.gd/Card.html','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
+        onclick="window.open('Card.html','_blank')"><img src="https://yeeplist.page.gd/images/placeholder.png">
   Player Cards
+</button>
+              <button class="external-link-btn"
+        onclick="window.open('ltm.html','_blank')"><img src="https://yeeplist.page.gd/images/favicon_ltm.ico">
+  LTM's
 </button>
       <button class="external-link-btn">Other Stuff</button>
       <button data-cat="credits"><img src="https://yeeplist.page.gd/images/credits.png" alt="" />Credits And Testers</button>
@@ -302,7 +308,7 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
     </nav>
   </aside>
 
-  <!-- MAIN -->
+  
   <section class="main">
 
     <header class="main-head">
@@ -328,7 +334,7 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
   </section>
 </div>
 
-<!-- MODAL -->
+
 <div class="modal" id="modal">
   <div class="modal-card">
     <button class="modal-close" onclick="closeModal()">×</button>
@@ -438,7 +444,7 @@ const players = [
   { 
     id:6, 
     name:"Ek", 
-    avatar:"https://yeeplist.page.gd/images/EK.jpeg", 
+    avatar:"https://yeeplist.page.gd/images/Ek.jpeg", 
     title:"Master Yeep", 
     score:0+0+0+20+20+30+0+30, 
     team:"The Pirates",
@@ -577,8 +583,8 @@ const players = [
     name:"WooperYeepes", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Divine Yeep", 
-    score:60+45+45+60+60+60+30+45, 
-	team:"Divine Intervention",
+    score:60+45+45+60+60+60+30+45,
+    team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Divine.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
@@ -767,6 +773,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Divine Yeep", 
     score:60+60+45+10+60+60+60+60, 
+    team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Divine.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Tier1.png"},
@@ -1105,9 +1112,10 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Battle Yeep", 
     score:30+0+0+0+20+0+0+0,
+    team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -1134,8 +1142,8 @@ const players = [
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Other PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
-  },    
-	{ 
+  },                   
+    { 
     id:42, 
     name:"ItzNaN", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
@@ -1171,7 +1179,7 @@ const searchInput = document.getElementById("search");
 const sidebar = document.querySelector(".sidebar");
 const wrap = document.querySelector(".wrap");
 
-/* ---------- RENDER ---------- */
+
 function renderList(list){
   leaderboard.innerHTML = "";
 
@@ -1211,7 +1219,6 @@ function renderList(list){
   });
 }
 
-/* ---------- MODAL ---------- */
 function openModal(p){
   document.getElementById("modalAvatar").src = p.avatar;
   document.getElementById("modalName").textContent = p.name;
@@ -1248,13 +1255,13 @@ function closeModal(){
   document.getElementById("modal").classList.remove("active");
 }
 
-/* ---------- SEARCH ---------- */
+
 searchInput.addEventListener("input", ()=>{
   const q = searchInput.value.toLowerCase();
 
   let baseList = players;
 
-  // 🔒 Respect active category
+  
   if (activeCategory) {
     baseList = players.filter(p =>
       p.categories.some(c => c.cat.includes(activeCategory))
@@ -1278,7 +1285,7 @@ searchInput.addEventListener("input", ()=>{
   renderList(filtered);
 });
 
-/* ---------- CATEGORY FILTER ---------- */
+
 const categoryMap = {
   all: null,
   bat: "Bat PvP",
@@ -1320,14 +1327,14 @@ if (!activeCategory) {
   });
 });
 
-/* ---------- THE YEEPS LIST POPUP ---------- */
+
 const yeepsBtn = document.getElementById("yeeplistBtn");
 const rankPopup = document.getElementById("rankPopup");
 
 yeepsBtn.addEventListener("click", (e) => {
   e.stopPropagation();
 
-  // toggle popup
+
   if (rankPopup.style.display === "flex") {
     rankPopup.style.display = "none";
     return;
@@ -1348,21 +1355,21 @@ yeepsBtn.addEventListener("click", (e) => {
   rankPopup.style.display = "flex";
 });
 
-// close when clicking outside
+
 document.addEventListener("click", () => {
   rankPopup.style.display = "none";
 });
 
-// prevent closing when clicking inside popup
+
 rankPopup.addEventListener("click", e => e.stopPropagation());
 
-/* ---------- MENU TOGGLE ---------- */
+
 document.getElementById("menuToggle").onclick = ()=>{
   sidebar.classList.toggle("open");
   wrap.classList.toggle("menu-open");
 };
 
-/* ---------- INITIAL ---------- */
+
 renderList(players.sort((a,b)=>b.score-a.score));
 </script>
 </body>
