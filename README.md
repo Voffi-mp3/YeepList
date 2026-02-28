@@ -1,7 +1,3 @@
 # YeepList
-The thingy for website so i dont get doxxed again :3
-
-htdocs
-  -Images
-  -other stuff (html)
-  -.htaccess
+The PvP Ranking Website For Yeeps
+this is for pepole hwo cant open the original site
