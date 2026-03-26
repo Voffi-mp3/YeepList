@@ -4,12 +4,14 @@ const players = [
     name:"Voffi", 
     avatar:"https://yeeplist.page.gd/images/Voffi.png", 
     title:"Mythic Yeep", 
-    score:20+45+20, 
+    score:20+45+20+4+3, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"SMP PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Mace PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
+      {cat:"Bat PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 4 | Low", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
       {cat:"Credits And Testers", pos:"Dev", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },  
@@ -18,12 +20,14 @@ const players = [
     name:"Yellowmellow13", 
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Mythic Yeep", 
-    score:45+30+6, 
+    score:45+30+6+10+4, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Mace PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
+      {cat:"Bat PvP", pos:"Tier: 3 | High", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
       {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/placeholder.png"}
     ]
   },
@@ -32,12 +36,14 @@ const players = [
     name:"WooperYeeps", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Mythic Yeep", 
-    score:20+6+45, 
+    score:20+6+45+4+2, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Mace PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
+      {cat:"Bat PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 5 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
       {cat:"Credits And Testers", pos:"Mace Tester", img:"https://yeeplist.page.gd/images/SwarmSlayer.jpg"}
     ]
   },
@@ -53,7 +59,9 @@ const yeepsRanks = [
   { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (400+)" },
   { img:"https://yeeplist.page.gd/images/Bat_Tier1.png", label:"Unbloced: No Blocked items" },
   { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" },
-  { img:"https://yeeplist.page.gd/images/Mace_Tier1.png", label:"Mace: 10k Cotton, Macing Gadjets" }
+  { img:"https://yeeplist.page.gd/images/Mace_Tier1.png", label:"Mace: 10k Cotton, Macing Gadjets" },
+  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Bat: Only Bats, One normal Cotton Generator" },
+  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Freeze Glove: Freeze Gloves, Hot coco, Freeze item, wings" },
 ];
 let activeCategory = null;
     
