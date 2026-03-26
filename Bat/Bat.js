@@ -29,6 +29,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Mythic Yeep", 
     score:4, 
+    team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Bat PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Tier4.png"},
