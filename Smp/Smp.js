@@ -32,7 +32,7 @@ const players = [
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Credits And Testers", pos:"Unblocked Tester", img:"https://yeeplist.page.gd/images/PvP_Rank.jpeg"}
+      {cat:"Credits And Testers", pos:"Mace Tester", img:"https://yeeplist.page.gd/images/SwarmSlayer.jpg"}
     ]
   },
 ];
@@ -46,7 +46,8 @@ const yeepsRanks = [
   { img:"https://yeeplist.page.gd/images/Mythic.png", label:"Mythic Yeep (300-400)" },
   { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (400+)" },
   { img:"https://yeeplist.page.gd/images/Bat_Tier1.png", label:"Unbloced: No Blocked items" },
-  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" }
+  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" },
+  { img:"https://yeeplist.page.gd/images/Mace_Tier1.png", label:"Mace: 10k Cotton, Macing Gadjets" }
 ];
 let activeCategory = null;
     
