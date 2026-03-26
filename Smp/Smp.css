@@ -2,7 +2,7 @@
   --bg:#0b0b0d;
   --panel:#0f1720;
   --muted:#94a3b8;
-  --accent:#ff004f;
+  --accent:#D4ACFB;
   --accent-2:#f72a79;
   --card:#0b1320;
   --glass: rgba(255,255,255,0.03);
@@ -15,7 +15,7 @@
 *{box-sizing:border-box;}
 body{
   margin:0;
-  background: linear-gradient(165deg,var(--bg) 0%, #960330 100%);
+  background: linear-gradient(165deg,var(--bg) 0%, #b84fce 100%);
   color:#e6eef6;
   padding:28px 20px;
   display:flex;
@@ -32,7 +32,7 @@ body{
 
 
 .sidebar{
-  background:linear-gradient(165deg,var(--panel), #960330);
+  background:linear-gradient(165deg,var(--panel), #b84fce);
   border-radius:var(--radius);
   padding:18px;
   box-shadow:var(--shadow);
@@ -62,7 +62,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
 
 .main-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
 .controls{display:flex;gap:10px;}
-.search{background:linear-gradient(-165deg,var(--panel), #960330);border-radius:10px;padding:8px 12px;}
+.search{background:linear-gradient(-165deg,var(--panel), #b84fce);border-radius:10px;padding:8px 12px;}
 .search input{background:transparent;border:0;color:inherit;outline:none;}
 .btn{
   background:linear-gradient(165deg,var(--accent),var(--bg));
@@ -141,7 +141,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
   border-radius:6px;
   object-fit:cover;
   z-index:1;
-  background: linear-gradient(180deg, transparent, transparent,#960330);
+  background: linear-gradient(180deg, transparent, transparent,#b84fce);
 }
 
     #rankPopup{
@@ -149,7 +149,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
-  background:linear-gradient(165deg,var(--panel), #960330);
+  background:linear-gradient(165deg,var(--panel), #b84fce);
   border-radius:12px;
   padding:14px;
   box-shadow:0 10px 30px rgba(0,0,0,0.7);
@@ -219,7 +219,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
 }
 .modal.active{display:flex;}
 .modal-card{
-  background: linear-gradient(-160deg, var(--panel), #960330);
+  background: linear-gradient(-160deg, var(--panel), #b84fce);
   border-radius:var(--radius);
   padding:20px;
   width:360px;
@@ -238,7 +238,7 @@ nav.category-list img{width:36px;height:36px;border-radius:6px;}
 .modal-rank{display:flex;align-items:center;gap:6px;font-weight:700;color:var(--accent);}
 .modal-score{font-weight:600;}
 .modal-cats{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
-.modal-cats img{width:36px;height:36px;border-radius:6px;object-fit:cover;background: linear-gradient(180deg, transparent, #960330);}
+.modal-cats img{width:36px;height:36px;border-radius:6px;object-fit:cover;background: linear-gradient(180deg, transparent, #b84fce);}
 .modal-team{
   display:flex;
   align-items:center;
