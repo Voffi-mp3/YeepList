@@ -17,6 +17,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Mythic Yeep", 
     score:4, 
+    team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Snow PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
