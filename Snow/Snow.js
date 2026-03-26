@@ -29,6 +29,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Mythic Yeep", 
     score:2, 
+    team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Freeze Glove PvP", pos:"Tier: 5 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
