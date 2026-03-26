@@ -49,7 +49,7 @@ const yeepsRanks = [
   { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" },
   { img:"https://yeeplist.page.gd/images/Mace_Tier1.png", label:"Mace: 10k Cotton, Macing Gadjets" },
   { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Bat: Only Bats, One normal Cotton Generator" },
-  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Freeze Glove: Freeze Gloves, Hot coco, Freeze item, wings" },
+  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Snow: Freeze Gloves, Hot coco, Freeze item, wings" },
 ];
 let activeCategory = null;
     
