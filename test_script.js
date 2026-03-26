@@ -4,11 +4,37 @@ const players = [
     name:"Voffi", 
     avatar:"https://yeeplist.page.gd/images/Voffi.png", 
     title:"Mythic Yeep", 
-    score:45+30, 
+    score:45+20, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"SMP PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  },  
+  { 
+    id:2, 
+    name:"Yellowmellow13", 
+    avatar:"https://yeeplist.page.gd/images/YellowM.png", 
+    title:"Mythic Yeep", 
+    score:45+30, 
+    rank:"https://yeeplist.page.gd/images/Mythic.png",  
+    categories:[
+      {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+    ]
+  },
+    { 
+    id:3, 
+    name:"WooperYeeps", 
+    avatar:"https://yeeplist.page.gd/images/Wooper.png", 
+    title:"Mythic Yeep", 
+    score:45+6, 
+    rank:"https://yeeplist.page.gd/images/Mythic.png",  
+    categories:[
+      {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },
