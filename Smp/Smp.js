@@ -17,6 +17,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Mythic Yeep", 
     score:30, 
+    team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
