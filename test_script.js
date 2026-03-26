@@ -21,7 +21,9 @@ const yeepsRanks = [
   { img:"https://yeeplist.page.gd/images/Elite.png", label:"Elite Yeep (150-200)" },
   { img:"https://yeeplist.page.gd/images/War.png", label:"War Yeep (200-300)" },
   { img:"https://yeeplist.page.gd/images/Mythic.png", label:"Mythic Yeep (300-400)" },
-  { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (400+)" }
+  { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (400+)" },
+  { img:"https://yeeplist.page.gd/images/Bat_Tier1.png", label:"Unbloced: No Blocked items" },
+  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" }
 ];
 let activeCategory = null;
     
