@@ -9,20 +9,20 @@ const players = [
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"SMP PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+      {cat:"Credits And Testers", pos:"Dev", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },  
   { 
     id:2, 
     name:"Yellowmellow13", 
-    avatar:"https://yeeplist.page.gd/images/YellowM.png", 
+    avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Mythic Yeep", 
     score:45+30, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Placeholder.png"}
     ]
   },
     { 
@@ -35,7 +35,7 @@ const players = [
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
+      {cat:"Credits And Testers", pos:"Unblocked Tester", img:"https://yeeplist.page.gd/images/PvP_Rank.jpeg"}
     ]
   },
 ];
