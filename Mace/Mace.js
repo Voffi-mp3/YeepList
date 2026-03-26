@@ -29,6 +29,7 @@ const players = [
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Mythic Yeep", 
     score:45, 
+    team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Mace PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
