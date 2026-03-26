@@ -22,7 +22,7 @@ const players = [
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Placeholder.png"}
+      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/placeholder.png"}
     ]
   },
     { 
