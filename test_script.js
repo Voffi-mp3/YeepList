@@ -28,7 +28,7 @@ const players = [
       {cat:"Mace PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
       {cat:"Bat PvP", pos:"Tier: 3 | High", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:"Snow PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
-      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/placeholder.png"}
+      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Desert.png"}
     ]
   },
     { 
