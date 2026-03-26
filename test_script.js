@@ -4,7 +4,7 @@ const players = [
     name:"Voffi", 
     avatar:"https://yeeplist.page.gd/images/Voffi.png", 
     title:"Mythic Yeep", 
-    score:20+20+45, 
+    score:20+45+20, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
@@ -32,7 +32,7 @@ const players = [
     name:"WooperYeeps", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Mythic Yeep", 
-    score20+6+45, 
+    score:20+6+45, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
