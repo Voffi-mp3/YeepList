@@ -3,9 +3,9 @@ const players = [
     id:1, 
     name:"Voffi", 
     avatar:"https://yeeplist.page.gd/images/Voffi.png", 
-    title:"Mythic Yeep", 
+    title:"Master Yeep", 
     score:20, 
-    rank:"https://yeeplist.page.gd/images/Mythic.png",  
+    rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Credits And Testers", pos:"Dev", img:"https://yeeplist.page.gd/images/credits.png"}
@@ -15,10 +15,10 @@ const players = [
     id:2, 
     name:"Yellowmellow13", 
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
-    title:"Mythic Yeep", 
+    title:"Master Yeep", 
     score:45, 
     team:"The Regulation",
-    rank:"https://yeeplist.page.gd/images/Mythic.png",  
+    rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Desert.png"}
@@ -28,10 +28,10 @@ const players = [
     id:3, 
     name:"WooperYeeps", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
-    title:"Mythic Yeep", 
+    title:"Master Yeep", 
     score:20, 
     team:"Divine Intervention",
-    rank:"https://yeeplist.page.gd/images/Mythic.png",  
+    rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Credits And Testers", pos:"Mace Tester", img:"https://yeeplist.page.gd/images/SwarmSlayer.jpg"}
@@ -39,16 +39,16 @@ const players = [
   },
 ];
 const yeepsRanks = [
-  { img:"https://yeeplist.page.gd/images/Newb.png", label:"Newb Yeep (0-25)" },
-  { img:"https://yeeplist.page.gd/images/Street.png", label:"Street Yeep (25-50)" },
-  { img:"https://yeeplist.page.gd/images/Battle.png", label:"Battle Yeep (50-100)" },
-  { img:"https://yeeplist.page.gd/images/Master.png", label:"Master Yeep (100-150)" },
-  { img:"https://yeeplist.page.gd/images/Elite.png", label:"Elite Yeep (150-200)" },
-  { img:"https://yeeplist.page.gd/images/War.png", label:"War Yeep (200-300)" },
-  { img:"https://yeeplist.page.gd/images/Mythic.png", label:"Mythic Yeep (300-400)" },
-  { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (400+)" },
+  { img:"https://yeeplist.page.gd/images/Newb.png", label:"Newb Yeep (0-10)" },
+  { img:"https://yeeplist.page.gd/images/Street.png", label:"Street Yeep (10-20)" },
+  { img:"https://yeeplist.page.gd/images/Battle.png", label:"Battle Yeep (20-50)" },
+  { img:"https://yeeplist.page.gd/images/Master.png", label:"Master Yeep (50-100)" },
+  { img:"https://yeeplist.page.gd/images/Elite.png", label:"Elite Yeep (100-150)" },
+  { img:"https://yeeplist.page.gd/images/War.png", label:"War Yeep (150-200)" },
+  { img:"https://yeeplist.page.gd/images/Mythic.png", label:"Mythic Yeep (200-250)" },
+  { img:"https://yeeplist.page.gd/images/Divine.png", label:"Divine Yeep (300+)" },
   { img:"https://yeeplist.page.gd/images/Bat_Tier1.png", label:"Unbloced: No Blocked items" },
-  { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" },
+  { img:"https://yeeplist.page.gd/images/Axe_Tier1.png", label:"Smp: Sesonal items banned, 10k Cotton 2x Damage" },
   { img:"https://yeeplist.page.gd/images/Mace_Tier1.png", label:"Mace: 10k Cotton, Macing Gadjets" },
   { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Bat: Only Bats, One normal Cotton Generator" },
   { img:"https://yeeplist.page.gd/images/Tier1.png", label:"Snow: Freeze Gloves, Hot coco, Freeze item, wings" },
