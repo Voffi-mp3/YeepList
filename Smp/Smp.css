@@ -3,7 +3,7 @@
   --panel:#0f1720;
   --muted:#94a3b8;
   --accent:#D4ACFB;
-  --accent-2:#f72a79;
+  --accent-2:#d4acfb;
   --card:#0b1320;
   --glass: rgba(255,255,255,0.03);
   --radius:12px;
@@ -16,7 +16,7 @@
 body{
   margin:0;
   background: linear-gradient(165deg,var(--bg) 0%, #b84fce 100%);
-  color:#e6eef6;
+  color:#fcb0f3;
   padding:28px 20px;
   display:flex;
   justify-content:center;
