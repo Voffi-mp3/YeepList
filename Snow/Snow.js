@@ -20,7 +20,7 @@ const players = [
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
       {cat:"Snow PvP", pos:"Tier: 4 | High", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
-      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/placeholder.png"}
+      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Desert.png"}
     ]
   },
     { 
