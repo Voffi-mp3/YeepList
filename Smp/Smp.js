@@ -7,7 +7,7 @@ const players = [
     score:20, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
-      {cat:"SMP PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"SMP PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
       {cat:"Credits And Testers", pos:"Dev", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },  
@@ -19,8 +19,8 @@ const players = [
     score:30, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
-      {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/placeholder.png"}
+      {cat:"SMP PvP", pos:"Tier: 2 | High", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Desert.png"}
     ]
   },
     { 
@@ -31,7 +31,7 @@ const players = [
     score:6, 
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
-      {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"SMP PvP", pos:"Tier: 3 | Low", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
       {cat:"Credits And Testers", pos:"Mace Tester", img:"https://yeeplist.page.gd/images/SwarmSlayer.jpg"}
     ]
   },
