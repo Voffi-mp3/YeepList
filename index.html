@@ -347,8 +347,11 @@ footer{text-align:center;margin-top:22px;color:var(--muted);}
   </div>
 </div>
 <script>
-<script src="Players.js"></script>
+<script type="module" src="Players.js"></script>
 <script>
+
+import { players } from './Players.js';
+
 
 const yeepsRanks = [
   { img:"https://yeeplist.page.gd/images/Newb.png", label:"Newb Yeep (0-25)" },
