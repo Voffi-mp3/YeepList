@@ -293,6 +293,7 @@ export const players = [
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Master Yeep", 
     score:30+0+45+20+10+0+0+20, 
+	team:"The Shinobi",
     rank:"https://yeeplist.page.gd/images/Master.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
