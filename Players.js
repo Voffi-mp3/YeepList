@@ -1260,6 +1260,7 @@ export const players = [
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Master Yeep", 
     score:6+20+20+4+10+20+2+30,
+    team:"The Pirates",
     rank:"https://yeeplist.page.gd/images/Master.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 6 | Shield", img:"https://yeeplist.page.gd/images/Tier6.png"},
