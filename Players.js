@@ -272,9 +272,9 @@ export const players = [
     id:15, 
     name:"Xoix", 
     avatar:"https://yeeplist.page.gd/images/xoix.jpg", 
-    title:"Mythic Yeep", 
+    title:"War Yeep", 
     score:30+30+45+1+45+30+60+45, 
-    rank:"https://yeeplist.page.gd/images/Mythic.png",
+    rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:"Dagger PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
@@ -748,7 +748,7 @@ export const players = [
     title:"Mythic Yeep", 
     score:45+45+30+20+60+60+30+20,
     team:"The Regulation",
-    rank:"https://yeeplist.page.gd/images/Mytic.png",
+    rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
@@ -1131,7 +1131,7 @@ export const players = [
 	{ 
     id:60, 
     name:"LilEasy1A", 
-    avatar:"https://yeeplist.page.gd/images/LilEasy1A.png", 
+    avatar:"https://yeeplist.page.gd/images/LilEasyA1.png", 
     title:"Elite Yeep", 
     score:45+6+60+4+10+10+0+45,
     rank:"https://yeeplist.page.gd/images/Elite.png",
