@@ -1325,6 +1325,24 @@ export const players = [
       {cat:"Scythe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
+  },	
+	{ 
+    id:71, 
+    name:"tornadoslayer115", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+0+10+0+0+0+0+6,
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"Tier: 6 | But-jo, Dual", img:"https://yeeplist.page.gd/images/Tier6.png"}
+    ]
   },
 
 ];
