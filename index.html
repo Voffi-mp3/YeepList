@@ -559,6 +559,61 @@ document.getElementById("menuToggle").onclick = ()=>{
 
 
 renderList(players.sort((a,b)=>b.score-a.score));
+
+	function getTier(player, catName) {
+  const cat = player.categories.find(c =>
+    c.cat.toLowerCase() === catName.toLowerCase()
+  );
+  if (!cat || !cat.pos) return Infinity;
+
+  const match = cat.pos.match(/tier[:\s]*([0-9]+)/i);
+  return match ? parseInt(match[1], 10) : Infinity;
+}
+
+const fixedCategoryMap = {
+  all: null,
+  bat: "Bat PvP",
+  dagger: "Dagger PvP",
+  glove: "Freeze Glove PvP",
+  mace: "Mace PvP",
+  shield: "Shield + Weapon PvP",
+  fire: "Fire Axe PvP",
+  scythe: "Scythe PvP",
+  other: "Other PvP",
+  credits: "Credits And Testers"
+};
+
+activeCategory = null;
+
+document.querySelectorAll(".category-list button").forEach(btn => {
+  btn.addEventListener("click", () => {
+
+    document.querySelectorAll(".category-list button")
+      .forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const key = btn.dataset.cat;
+    activeCategory = fixedCategoryMap[key] || null;
+
+    let filtered;
+
+    if (!activeCategory) {
+      filtered = [...players].sort((a, b) => b.score - a.score);
+    } else {
+      filtered = players
+        .filter(p =>
+          p.categories.some(c =>
+            c.cat.toLowerCase() === activeCategory.toLowerCase()
+          )
+        )
+        .sort((a, b) =>
+          getTier(a, activeCategory) - getTier(b, activeCategory)
+        );
+    }
+
+    renderList(filtered);
+  });
+});
 </script>
 </body>
 </html>
