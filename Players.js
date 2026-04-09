@@ -442,7 +442,7 @@ export const players = [
           { 
     id:24, 
     name:"Simply Enderman", 
-    avatar:"https://yeeplist.page.gd/images/SimplyEnderman.png", 
+    avatar:"https://yeeplist.page.gd/images/SimpyEnderman.png", 
     title:"Newb Yeep", 
     score:0+4+0+0+2+3+0+0, 
     rank:"https://yeeplist.page.gd/images/Newb.png",
