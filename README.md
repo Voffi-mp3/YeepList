@@ -25,4 +25,4 @@ Get Assigned To It Thru Vlib For this Proces Plese Dm Voffi
 
 
 
-[![Discord](https://img.shields.io/badge/Discord-Invite-blue?style=for-the-badge&logo=discord)](https://discord.gg/7mry9QQCGH)
+[![Discord](https://img.shields.io/badge/Discord-Invite-blue?style=flat&logo=discord)](https://discord.gg/7mry9QQCGH)
