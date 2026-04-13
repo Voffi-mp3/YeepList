@@ -880,7 +880,8 @@ export const players = [
     name:"Clover", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Battle Yeep", 
-    score:30+30+20+0+10+0+3+6,
+    score:30+30+20+0+10+0+3+6, 
+    team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
