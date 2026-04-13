@@ -23,4 +23,5 @@ Get Assigned To It Thru Vlib For this Proces Plese Dm Voffi
 
 > Made By: Voffi, Crystals And Astron with Help from Vlib
 
-[![Discord](https://shields.io)](discord.gg/7mry9QQCGH)
+[![Discord]([https://shields.io](https://img.shields.io/discord/1432270137091952652
+))](https://discord.gg/7mry9QQCGH)
