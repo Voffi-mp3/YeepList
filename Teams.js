@@ -1,1 +1,0 @@
-/*eventualy beaing like Players.js just for teams*/
