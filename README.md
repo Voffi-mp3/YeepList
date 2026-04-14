@@ -9,7 +9,7 @@ A Tier Tester Then It Gets Put On The Website
 
 ## Do You Want To Help
 
-You Can Apply To Help With Two Thing Testing And Programing
+You Can Apply To Help With Two Things Testing And Programing
 
 ### Applying For Tester
 
@@ -18,8 +18,8 @@ To Fairly Test People
 
 ### Applying For Programer
 
-For this Proses You Have To Ither Request It From Voffi Or
-Get Assigned To It Thru Vlib For this Proces Plese Dm Voffi
+For this Proses You Have To Either Request It From Voffi Or
+Get Assigned To It Through Vlib For this Proces Please Dm Voffi
 
 > Made By: Voffi, Crystals And Astron with Help from Vlib
 
