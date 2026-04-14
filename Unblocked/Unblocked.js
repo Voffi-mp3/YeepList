@@ -1,9 +1,9 @@
 const players = [
   { 
     id:1, 
-    name:"Voffi", 
+    name:"level one", 
     avatar:"https://yeeplist.page.gd/images/Voffi.png", 
-    title:"Master Yeep", 
+    title:"1 xp", 
     score:20, 
     rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
@@ -13,11 +13,10 @@ const players = [
   },  
   { 
     id:2, 
-    name:"Yellowmellow13", 
+    name:"level 2", 
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
-    title:"Master Yeep", 
-    score:45, 
-    team:"The Regulation",
+    title:"1 xp", 
+    score:40, 
     rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 1 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
@@ -26,11 +25,10 @@ const players = [
   },
     { 
     id:3, 
-    name:"WooperYeeps", 
+    name:"level 3", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
-    title:"Master Yeep", 
-    score:20, 
-    team:"Divine Intervention",
+    title:"1 token", 
+    score:60, 
     rank:"https://yeeplist.page.gd/images/Master.png",  
     categories:[
       {cat:"Unblocked PvP", pos:"Tier: 2 | Low", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
