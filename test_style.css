@@ -16,7 +16,7 @@
 body{
   margin:0;
   background: linear-gradient(165deg,var(--bg) 0%);
-  color:#363a4f	;
+  color:#363a4f	; /*Crystals change this for text color if you did not know i wuld recomend #9195a8*/
   padding:28px 20px;
   display:flex;
   justify-content:center;
