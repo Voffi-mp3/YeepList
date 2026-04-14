@@ -1454,7 +1454,7 @@ export const teams = [
       {cat:"#1 Wooper", pos:"425 Points", img:"https://yeeplist.page.gd/images/Wooper.png"},
       {cat:"#2 Morleo", pos:"335 Points", img:"https://yeeplist.page.gd/images/Morleo.png"},
       {cat:"#3 Evan_The_SalmonKing", pos:"295 Points", img:"https://yeeplist.page.gd/images/Evan_The_SalmonKing.jpeg"},
-      {cat:"#4 Chief_Chickion", pos:"225 Points", img:"https://yeeplist.page.gd/images/Chief_Chickoin.png.png"},
+      {cat:"#4 Chief_Chickion", pos:"225 Points", img:"https://yeeplist.page.gd/images/Chief_Chickoin.png"},
       {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
     ]
   },        
