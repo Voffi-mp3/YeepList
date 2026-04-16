@@ -1170,18 +1170,18 @@ export const players = [
     id:62, 
     name:"fridge4809", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Battle Yeep", 
-    score:20+20+0+0+0+10+0+0,
-    rank:"https://yeeplist.page.gd/images/Battle.png",
+    title:"Elite Yeep", 
+    score:20+3+0+20+6+20+4+30,
+    rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Tier4.png"},
-      {cat:"Dagger PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier4.png"},
+      {cat:"Dagger PvP", pos:"Tier: 8 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier8.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier5.png"},
-      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+      {cat:"Mace PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier4.png"},
+      {cat:"Scythe PvP", pos:"Tier: 7", img:"https://yeeplist.page.gd/images/Scythe_Tier7.png"},
+      {cat:"Other PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
   },	
 	{ 
