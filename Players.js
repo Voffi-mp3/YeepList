@@ -1346,6 +1346,24 @@ export const players = [
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Other PvP", pos:"Tier: 6 | But-jo, Dual", img:"https://yeeplist.page.gd/images/Tier6.png"}
     ]
+  },	
+	{ 
+    id:72, 
+    name:"JadenMAN", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Mythic Yeep", 
+    score:60+60+20+45+20+30+60+45,
+    rank:"https://yeeplist.page.gd/images/Mythic.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
+      {cat:"Mace PvP", pos:"Tier: 2 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
+      {cat:"Shield + Weaopn PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Other PvP", pos:"Tier: 2 | Drumstick", img:"https://yeeplist.page.gd/images/Tier2.png"}
+    ]
   },
 
 ];
