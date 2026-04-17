@@ -879,19 +879,19 @@ export const players = [
     id:46, 
     name:"Clover", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Battle Yeep", 
-    score:30+30+20+0+10+0+3+6, 
+    title:"Elite Yeep", 
+    score:30+45+6+0+10+20+3+20, 
     team:"The Regulation",
-    rank:"https://yeeplist.page.gd/images/Battle.png",
+    rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
-      {cat:"Dagger PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 6 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier6.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
-      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier4.png"},
       {cat:"Scythe PvP", pos:"Tier: 8 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier8.png"},
-      {cat:"Other PvP", pos:"Tier: 6 | Candycane, Shield", img:"https://yeeplist.page.gd/images/Tier6.png"}
+      {cat:"Other PvP", pos:"Tier: 4 | Candycane, Dual", img:"https://yeeplist.page.gd/images/Tier4.png"}
     ]
   },
       { 
