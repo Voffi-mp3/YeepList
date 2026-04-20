@@ -500,7 +500,7 @@ export const players = [
     name:"Evan_The_SalmonKing", 
     avatar:"https://yeeplist.page.gd/images/Evan_The_SalmonKing.jpeg", 
     title:"Mythic Yeep", 
-    score:60+60+30+10+30+45+45+345,
+    score:60+60+30+10+30+45+45+45,
     team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
