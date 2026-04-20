@@ -1,24 +1,5 @@
 export const players = [
   { 
-    id:1, 
-    name:"Voffi", 
-    avatar:"https://yeeplist.page.gd/images/Voffi.png", 
-    title:"War Yeep", 
-    score:30+45+20+60+30+60+20+20, 
-    rank:"https://yeeplist.page.gd/images/War.png",  
-    categories:[
-      {cat:"Bat PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
-      {cat:"Dagger PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
-      {cat:"Mace PvP", pos:"Tier: 1 | Wing", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
-      {cat:"Scythe PvP", pos:"Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
-      {cat:"Other PvP", pos:"Tier: 4 | Drumstick, Shield", img:"https://yeeplist.page.gd/images/Tier4.png"},
-      {cat:"Credits And Testers", pos:"Creator", img:"https://yeeplist.page.gd/images/credits.png"}
-    ]
-  },
-  { 
     id:2, 
     name:"Gmonk", 
     avatar:"https://yeeplist.page.gd/images/Gmonk.png", 
