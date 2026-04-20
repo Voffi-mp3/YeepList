@@ -1364,6 +1364,24 @@ export const players = [
       {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
       {cat:"Other PvP", pos:"Tier: 2 | Drumstick", img:"https://yeeplist.page.gd/images/Tier2.png"}
     ]
+  },	
+	{ 
+    id:72, 
+    name:"Space_Lord", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"War Yeep", 
+    score:45+60+30+45+20+10+45+30,
+    rank:"https://yeeplist.page.gd/images/War.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
+      {cat:"Mace PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
+      {cat:"Shield + Weaopn PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier5.png"},
+      {cat:"Scythe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
+      {cat:"Other PvP", pos:"Tier: 3 | Boomerang", img:"https://yeeplist.page.gd/images/Tier3.png"}
+    ]
   },
 
 ];
