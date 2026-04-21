@@ -1334,6 +1334,7 @@ export const players = [
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Mythic Yeep", 
     score:60+60+20+45+20+30+60+45,
+	team:"Abyss",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
