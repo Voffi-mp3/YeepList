@@ -1369,10 +1369,10 @@ export const players = [
     id:74, 
     name:"Astron", 
     avatar:"https://yeeplist.page.gd/images/Astron.png", 
-    title:"Mythic Yeep", 
+    title:"Divine Yeep", 
     score:60+60+60+60+60+60+60+0,
 	team:"Acheron",
-    rank:"https://yeeplist.page.gd/images/Mythic.png",
+    rank:"https://yeeplist.page.gd/images/Divine.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
