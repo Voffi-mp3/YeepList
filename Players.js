@@ -1367,27 +1367,7 @@ export const players = [
       {cat:"Other PvP", pos:"Tier: 3 | Boomerang", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
   },	
-	{ 
-    id:74, 
-    name:"Astron", 
-    avatar:"https://yeeplist.page.gd/images/Astron.png", 
-    title:"Divine Yeep", 
-    score:60+60+60+60+60+60+60+0,
-	team:"Acheron",
-    rank:"https://yeeplist.page.gd/images/Divine.png",
-    categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
-      {cat:"Mace PvP", pos:"Tier: 1 | Wing", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
-      {cat:"Shield + Weaopn PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
-      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
-    ]
-  },
-
-
+	
 ];
 
 
@@ -1507,21 +1487,6 @@ export const teams = [
     rank:"https://yeeplist.page.gd/images/Newb.png",  
     categories:[
       {cat:"#1 Im.Mystic", pos:"125 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
-      {cat:"#2 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
-    ]
-  },        
-	{ 
-    id:9, 
-    name:"Acheron", 
-    avatar:"https://yeeplist.page.gd/images/Acheron.png", 
-    title:"Street Yeep Team", 
-    score:360, 
-    rank:"https://yeeplist.page.gd/images/Street.png",  
-    categories:[
-      {cat:"#1 Astron", pos:"360 Points", img:"https://yeeplist.page.gd/images/Astron.png"},
       {cat:"#2 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
