@@ -3,6 +3,16 @@ const players = [
     id:-1, 
     name:"Info", 
     avatar:"https://yeeplist.page.gd/images/Info.png", 
+    title:"Coming Soon...", 
+    score: "A Event With A Wierd Twist Is Aproching", 
+    rank:"https://yeeplist.page.gd/images/TierX.png",  
+    categories:[
+      {cat:"", pos:"", img:"" },
+        ]},
+  { 
+    id:1, 
+    name:"Canseled", 
+    avatar:"https://yeeplist.page.gd/images/Info.png", 
     title:"Easter Event 2026", 
     score: "is based on each win using the Easter Event 2026 loudout", 
     rank:"https://yeeplist.page.gd/images/TierX.png",  
