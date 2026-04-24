@@ -1352,7 +1352,7 @@ export const players = [
 	{ 
     id:73, 
     name:"Space_Lord", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    avatar:"https://yeeplist.page.gd/images/Space_lord.webp", 
     title:"War Yeep", 
     score:45+60+30+45+20+10+45+30,
     rank:"https://yeeplist.page.gd/images/War.png",
@@ -1366,7 +1366,26 @@ export const players = [
       {cat:"Scythe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 3 | Boomerang", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
-  },	
+  },		
+	{ 
+    id:74, 
+    name:"Smoresvr", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Battle Yeep", 
+    score:20+0+0+30+0+0+0+0,
+	team:"Abyss",
+    rank:"https://yeeplist.page.gd/images/Battle.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Mace PvP", pos:"Tier: 3 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
 	
 ];
 
@@ -1492,5 +1511,20 @@ export const teams = [
       {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
     ]
-  },     
+  },         
+	{ 
+    id:9, 
+    name:"Abyss", 
+    avatar:"https://yeeplist.page.gd/images/Abyss.jpeg", 
+    title:"Newb Yeep Team", 
+    score:340+50, 
+    rank:"https://yeeplist.page.gd/images/Newb.png",  
+    categories:[
+      {cat:"#1 JadenMan", pos:"340 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#2 Smoresvr", pos:"50 Points", img:"https://yeeplist.page.gd/images/placeholder.png"},
+      {cat:"#3 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
+    ]
+  },    
 ];
