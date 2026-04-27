@@ -1352,7 +1352,7 @@ export const players = [
 	{ 
     id:73, 
     name:"Space_Lord", 
-    avatar:"https://yeeplist.page.gd/images/Space_lord.png", 
+    avatar:"https://yeeplist.page.gd/images/Space_Lord.png", 
     title:"War Yeep", 
     score:45+60+30+45+20+10+45+30,
     rank:"https://yeeplist.page.gd/images/War.png",
