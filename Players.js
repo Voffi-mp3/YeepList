@@ -812,7 +812,7 @@ export const players = [
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
       {cat:"Mace PvP", pos:"Tier: 6 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
@@ -1333,7 +1333,7 @@ export const players = [
 	{ 
     id:72, 
     name:"JadenMAN", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    avatar:"https://yeeplist.page.gd/images/Jadenman.jpng", 
     title:"Mythic Yeep", 
     score:60+60+20+45+20+30+60+45,
 	team:"Abyss",
@@ -1352,7 +1352,7 @@ export const players = [
 	{ 
     id:73, 
     name:"Space_Lord", 
-    avatar:"https://yeeplist.page.gd/images/Space_lord.webp", 
+    avatar:"https://yeeplist.page.gd/images/Space_lord.png", 
     title:"War Yeep", 
     score:45+60+30+45+20+10+45+30,
     rank:"https://yeeplist.page.gd/images/War.png",
@@ -1385,7 +1385,25 @@ export const players = [
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
-  },
+  },	
+	{ 
+    id:75, 
+    name:"XtraKittieYeeps", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Divine Yeep", 
+    score:45+60+45+60+60+60+60+60,
+    rank:"https://yeeplist.page.gd/images/Divine.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:"Mace PvP", pos:"Tier: 1 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
+      {cat:"Shield + Weaopn PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Other PvP", pos:"Tier: 1 | Mace, Bat", img:"https://yeeplist.page.gd/images/Tier1.png"}
+    ]
+  },		
 	
 ];
 
