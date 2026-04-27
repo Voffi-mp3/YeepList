@@ -1333,7 +1333,7 @@ export const players = [
 	{ 
     id:72, 
     name:"JadenMAN", 
-    avatar:"https://yeeplist.page.gd/images/Jadenman.jpng", 
+    avatar:"https://yeeplist.page.gd/images/Jadenman.jpeg", 
     title:"Mythic Yeep", 
     score:60+60+20+45+20+30+60+45,
 	team:"Abyss",
