@@ -15,12 +15,12 @@ const players = [
     id:2, 
     name:"Yellowmellow13", 
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
-    title:"Mythic Yeep", 
-    score:10, 
+    title:"Content Creator", 
+    score:60, 
     team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Mythic.png",  
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 3 | High", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:"Bat PvP", pos:"Tier: 1 | High", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:"Credits And Testers", pos:"Smp Tester", img:"https://yeeplist.page.gd/images/Desert.png"}
     ]
   },
