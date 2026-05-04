@@ -19,7 +19,7 @@ export const players = [
   },
   { 
     id:3, 
-    name:"Minty", 
+    name:"Mintyyeep", 
     avatar:"https://yeeplist.page.gd/images/Minty.png", 
     title:"Newb Yeep", 
     score:1+0+1+2+0+0+0+0, 
@@ -38,15 +38,15 @@ export const players = [
   },
   { 
     id:4, 
-    name:"Carp", 
+    name:"Meta_Carp", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Newb Yeep", 
-    score:0+0+0+0+0+0+0+10, 
-    rank:"https://yeeplist.page.gd/images/Newb.png",
+    title:"Battle Yeep", 
+    score:0+0+60+0+0+0+0+10, 
+    rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
       {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"Low Tier: 1", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -98,7 +98,7 @@ export const players = [
     name:"Frost Da Monk", 
     avatar:"https://yeeplist.page.gd/images/Frost.png", 
     title:"Elite Yeep", 
-    score:30+20+10+0+45+60+0+10, 
+    score:30+20+10+0+45+45+0+10, 
     team:"Cross Guild",
     rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
@@ -107,7 +107,7 @@ export const players = [
       {cat:"Freeze Glove PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Other PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"}
     ]
@@ -215,17 +215,17 @@ export const players = [
     name:"WooperYeepes", 
     avatar:"https://yeeplist.page.gd/images/Wooper.png", 
     title:"Divine Yeep", 
-    score:45+60+20+60+60+60+60+60,
+    score:45+60+20+70+60+60+60+60,
     team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Divine.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Dagger PvP", pos:"Low Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
-      {cat:"Mace PvP", pos:"Tier: 1 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Mace PvP", pos:"High Tier: 1 | Air Blaster", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
+      {cat:"Shield + Weapon PvP", pos:"Low Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Low Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"Low Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
       {cat:"Other PvP", pos:"Tier: 1 | Base ball bat, Shield", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Credits And Testers", pos:"Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
@@ -254,7 +254,7 @@ export const players = [
     name:"Xoix", 
     avatar:"https://yeeplist.page.gd/images/xoix.jpg", 
     title:"War Yeep", 
-    score:30+30+45+1+45+30+60+45, 
+    score:30+30+45+1+45+30+45+45, 
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
@@ -263,7 +263,7 @@ export const players = [
       {cat:"Mace PvP", pos:"Tier: 10", img:"https://yeeplist.page.gd/images/Mace_Tier10.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 2", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"}
     ]
   },
@@ -324,7 +324,7 @@ export const players = [
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Scythe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
       {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
-      {cat:"Credits And Testers", pos:"Tier Tester • Jr Dev", img:"https://yeeplist.page.gd/images/credits.png"}
+      {cat:"Credits And Testers", pos:"Tier Tester • Dev", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },
   { 
@@ -397,7 +397,8 @@ export const players = [
       {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:"Scythe PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Scythe_Tier3.png"},
-      {cat:"Other PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"}
+      {cat:"Other PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Credits And Testers", pos:"Jr Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
   },
       { 
@@ -405,17 +406,17 @@ export const players = [
     name:"YellowMellow", 
     avatar:"https://yeeplist.page.gd/images/YellowM.jpeg", 
     title:"Divine Yeep", 
-    score:60+60+45+20+60+60+60+60, 
+    score:45+45+45+20+60+60+45+60, 
     team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Divine.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:"Bat PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Low Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
       {cat:"Mace PvP", pos:"Tier: 4 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"Low Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"Low Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 1 | Drumstick, Shield", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Credits And Testers", pos:"Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
@@ -461,15 +462,15 @@ export const players = [
     name:"Coopter", 
     avatar:"https://yeeplist.page.gd/images/coopter.png", 
     title:"Elite Yeep", 
-    score:60+60+0+0+60+0+0+0,
+    score:45+45+0+0+70+0+0+0,
     team:"Gambit",
     rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Bat PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 1", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -482,12 +483,12 @@ export const players = [
     name:"Madd", 
     avatar:"https://yeeplist.page.gd/images/Madd.jpeg", 
     title:"Battle Yeep", 
-    score:10+0+60+0+10+0+0+0,
+    score:10+0+70+0+10+0+0+0,
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 1", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -500,17 +501,17 @@ export const players = [
     name:"Evan_The_SalmonKing", 
     avatar:"https://yeeplist.page.gd/images/Evan_The_SalmonKing.jpeg", 
     title:"Mythic Yeep", 
-    score:60+60+30+10+30+45+45+45,
+    score:45+60+30+10+30+45+60+45,
     team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"Low Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
       {cat:"Mace PvP", pos:"Tier: 5 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier5.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
-      {cat:"Scythe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
+      {cat:"Scythe PvP", pos:"Low Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
       {cat:"Other PvP", pos:"Tier: 2 | Lightning Hammer, Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
     ]
                     }, 
@@ -520,7 +521,7 @@ export const players = [
     name:"Clynchenator", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"War Yeep", 
-    score:30+45+45+0+60+60+45+0,
+    score:30+45+45+0+45+45+45+0,
     team:"Gambit",
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
@@ -528,8 +529,8 @@ export const players = [
       {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Fire Axe PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:"Scythe PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
@@ -709,16 +710,16 @@ export const players = [
     name:"Morleo", 
     avatar:"https://yeeplist.page.gd/images/Morleo.png", 
     title:"Mythic Yeep", 
-    score:60+30+45+30+60+60+20+30,
+    score:70+30+60+30+60+70+20+30,
     team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Bat PvP", pos:"High Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:"Dagger PvP", pos:"Tier: 3 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"Low Tier: 1", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
       {cat:"Mace PvP", pos:"Tier: 3 | Air Blasters", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"High Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:"Scythe PvP", pos:"Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
       {cat:"Other PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
@@ -728,7 +729,7 @@ export const players = [
     name:"Lostbamakids", 
     avatar:"https://yeeplist.page.gd/images/Lostbama.jpeg", 
     title:"Mythic Yeep", 
-    score:45+45+30+10+60+60+60+45,
+    score:45+45+30+10+45+45+45+45,
     team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
@@ -736,9 +737,9 @@ export const players = [
       {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 3 | Shield", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
       {cat:"Mace PvP", pos:"Tier: 5 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier5.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Fire Axe PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 2 | Drummstick, Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Credits And Testers", pos:"Jr Tier Tester", img:"https://yeeplist.page.gd/images/credits.png"}
     ]
@@ -748,15 +749,15 @@ export const players = [
     name:"Jevil_The_Clown", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Battle Yeep", 
-    score:60+0+0+0+60+0+0+0,
+    score:45+0+0+0+45+0+0+0,
     team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Bat PvP", pos:"High Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
@@ -807,15 +808,15 @@ export const players = [
     name:"SCRABBY_WHO", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"War Yeep", 
-    score:60+45+30+6+60+45+30+10,
+    score:45+45+30+6+45+45+30+10,
     team:"The Regulation",
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Bat PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Dagger PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
       {cat:"Mace PvP", pos:"Tier: 6 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier3.png"},
-      {cat:"Shield + Weapon PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:"Scythe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier3.png"},
       {cat:"Other PvP", pos:"Tier: 5 | Undocumented", img:"https://yeeplist.page.gd/images/Tier4.png"}
@@ -826,15 +827,15 @@ export const players = [
     name:"AI.DIAMOND", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"War Yeep", 
-    score:60+30+60+0+45+60+20+0,
+    score:45+30+60+0+45+45+20+0,
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Tier1.png"},
+      {cat:"Bat PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Dagger PvP", pos:"Tier: 3 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier3.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 2", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
+      {cat:"Fire Axe PvP", pos:"High Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:"Scythe PvP", pos:"Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
@@ -954,7 +955,7 @@ export const players = [
     name:"Godly_Glitch", 
     avatar:"https://yeeplist.page.gd/images/Godly.jpeg", 
     title:"Mythic Yeep", 
-    score:45+30+45+20+3+45+60+60,
+    score:45+30+45+20+3+45+45+60,
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
@@ -963,7 +964,7 @@ export const players = [
       {cat:"Mace PvP", pos:"Tier: 4 | Grapler", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 8", img:"https://yeeplist.page.gd/images/Tier8.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 1 | Candycane", img:"https://yeeplist.page.gd/images/Tier1.png"}
     ]
   },     
@@ -1034,7 +1035,7 @@ export const players = [
       {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Mace PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
+      {cat:"Mace PvP", pos:"Low Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 3", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier2.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -1100,10 +1101,10 @@ export const players = [
     name:"JordanDraws", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Elite Yeep", 
-    score:45+45+20+0+10+0+30+0,
+    score:60+45+20+0+10+0+30+0,
     rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Bat PvP", pos:"Low Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
       {cat:"Dagger PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -1118,12 +1119,12 @@ export const players = [
     name:"LilEasy1A", 
     avatar:"https://yeeplist.page.gd/images/LilEasyA1.png", 
     title:"Elite Yeep", 
-    score:45+6+60+4+10+10+0+45,
+    score:45+6+45+4+10+10+0+45,
     rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:"Dagger PvP", pos:"Tier: 6 | Shield", img:"https://yeeplist.page.gd/images/Bat_Tier6.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier1.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
       {cat:"Mace PvP", pos:"Tier: 7 | Grappler", img:"https://yeeplist.page.gd/images/Mace_Tier7.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 5 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier5.png"},
@@ -1168,35 +1169,17 @@ export const players = [
     ]
   },	
 	{ 
-    id:63, 
-    name:"Person_lol", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Elite Yeep", 
-    score:60+60+30+0+0+30+0+0,
-    rank:"https://yeeplist.page.gd/images/Elite.png",
-    categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
-      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
-      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
-    ]
-  },	
-	{ 
     id:64, 
     name:"osaosaosa", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Battle Yeep", 
-    score:0+0+0+45+0+30+0+0,
+    score:0+0+0+60+0+30+0+0,
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
       {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Mace PvP", pos:"Tier: 2 | Undocumented", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
+      {cat:"Mace PvP", pos:"Low Tier: 1 | Undocumented", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
       {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
@@ -1216,7 +1199,7 @@ export const players = [
       {cat:"Freeze Glove PvP", pos:"Tier: 6 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier6.png"},
       {cat:"Mace PvP", pos:"Tier: 4 | Undocumented", img:"https://yeeplist.page.gd/images/Mace_Tier4.png"},
       {cat:"Shield + Weapon PvP", pos:"Tier: 6", img:"https://yeeplist.page.gd/images/Tier6.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:"Scythe PvP", pos:"Tier: 5", img:"https://yeeplist.page.gd/images/Scythe_Tier5.png"},
       {cat:"Other PvP", pos:"Tier: 3 | Spear", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
@@ -1335,17 +1318,17 @@ export const players = [
     name:"JadenMAN", 
     avatar:"https://yeeplist.page.gd/images/Jadenman.jpeg", 
     title:"Mythic Yeep", 
-    score:60+60+20+45+20+30+60+45,
+    score:45+70+20+45+20+30+45+45,
 	team:"Abyss",
     rank:"https://yeeplist.page.gd/images/Mythic.png",
     categories:[
-      {cat:"Bat PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Bat PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"High Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier4.png"},
       {cat:"Mace PvP", pos:"Tier: 2 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
       {cat:"Shield + Weaopn PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
       {cat:"Other PvP", pos:"Tier: 2 | Drumstick", img:"https://yeeplist.page.gd/images/Tier2.png"}
     ]
   },	
@@ -1354,16 +1337,16 @@ export const players = [
     name:"Space_Lord", 
     avatar:"https://yeeplist.page.gd/images/Space_Lord.png", 
     title:"War Yeep", 
-    score:45+60+30+45+20+10+45+30,
+    score:45+45+30+45+20+10+70+30,
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
+      {cat:"Dagger PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
       {cat:"Freeze Glove PvP", pos:"Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
       {cat:"Mace PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier2.png"},
       {cat:"Shield + Weaopn PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
       {cat:"Fire Axe PvP", pos:"Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier5.png"},
-      {cat:"Scythe PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier2.png"},
+      {cat:"Scythe PvP", pos:"High Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Tier0_Bo.png"},
       {cat:"Other PvP", pos:"Tier: 3 | Boomerang", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
   },		
@@ -1384,24 +1367,6 @@ export const players = [
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
-    ]
-  },	
-	{ 
-    id:75, 
-    name:"XtraKittieYeeps", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Divine Yeep", 
-    score:45+60+45+60+60+60+60+60,
-    rank:"https://yeeplist.page.gd/images/Divine.png",
-    categories:[
-      {cat:"Bat PvP", pos:"Tier: 2 | Shield", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Dagger PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier1.png"},
-      {cat:"Freeze Glove PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
-      {cat:"Mace PvP", pos:"Tier: 1 | Air Blaster", img:"https://yeeplist.page.gd/images/Mace_Tier1.png"},
-      {cat:"Shield + Weaopn PvP", pos:"Tier: 1", img:"https://yeeplist.page.gd/images/Tier1.png"},
-      {cat:"Fire Axe PvP", pos:"Tier: 1 | Shield", img:"https://yeeplist.page.gd/images/Axe_Tier1.png"},
-      {cat:"Scythe PvP", pos:"Tier: 1 | Dual", img:"https://yeeplist.page.gd/images/Scythe_Tier1.png"},
-      {cat:"Other PvP", pos:"Tier: 1 | Mace, Bat", img:"https://yeeplist.page.gd/images/Tier1.png"}
     ]
   },		
 	
