@@ -1,7 +1,11 @@
 # Banned / Blacklisted List Of The Website
 
-`User:` \
-`Discord UID:` \
-`Resion:`
+`User:` TheVoidYeep \
+`Discord UID:` 1500181649990881452 \
+`Resion:` Alt Account
+
+`User:` ExtraKitle \
+`Discord UID:` 1195861358734999604 \
+`Resion:` Alt Account, Vpn And Suspected Cheating
 
 -# starting of as a template
