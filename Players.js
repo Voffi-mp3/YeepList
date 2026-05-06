@@ -1368,7 +1368,24 @@ export const players = [
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
-  },		
+  },		{ 
+    id:75, 
+    name:"O_r_e_o", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Elite Yeep", 
+    score:45+45+30+4+10+20+6+30,
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"Low Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Bat_Tier2.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
+      {cat:"Mace PvP", pos:"Low Tier: 7 | Shield", img:"https://yeeplist.page.gd/images/Mace_Tier7.png"},
+      {cat:"Shield + Weapon PvP", pos:"Low Tier: 5", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:"Fire Axe PvP", pos:"High Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Axe_Tier4.png"},
+      {cat:"Schyte PvP", pos:"High Tier: 6", img:"https://yeeplist.page.gd/images/Scythe_Tier6.png"},
+      {cat:"Other PvP", pos:"High Tier: 3 | But-jo", img:"https://yeeplist.page.gd/images/Tier3.png"}
+    ]
+  },	
 	
 ];
 
