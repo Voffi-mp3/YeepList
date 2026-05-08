@@ -1010,7 +1010,6 @@ export const players = [
     avatar:"https://yeeplist.page.gd/images/Chief_Chickoin.png", 
     title:"War Yeep", 
     score:45+30+0+45+30+45+30+0, 
-	team:"Divine Intervention",
     rank:"https://yeeplist.page.gd/images/War.png",
     categories:[
       {cat:"Bat PvP", pos:"Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
@@ -1487,13 +1486,13 @@ export const teams = [
     name:"Divine Intervention", 
     avatar:"https://yeeplist.page.gd/images/Divine_Intervention.png", 
     title:"Elite Yeep Team", 
-    score:425+335+325+225, 
+    score:425+335+325+, 
     rank:"https://yeeplist.page.gd/images/Elite.png",  
     categories:[
       {cat:"#1 Wooper", pos:"425 Points", img:"https://yeeplist.page.gd/images/Wooper.png"},
       {cat:"#2 Morleo", pos:"335 Points", img:"https://yeeplist.page.gd/images/Morleo.png"},
       {cat:"#3 Evan_The_SalmonKing", pos:"325 Points", img:"https://yeeplist.page.gd/images/Evan_The_SalmonKing.jpeg"},
-      {cat:"#4 Chief_Chickion", pos:"225 Points", img:"https://yeeplist.page.gd/images/Chief_Chickoin.png"},
+      {cat:"#4 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"#5 Unchosen", pos:"0 Points", img:"https://yeeplist.page.gd/images/TierU.png"},
     ]
   },        
