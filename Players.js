@@ -1486,7 +1486,7 @@ export const teams = [
     name:"Divine Intervention", 
     avatar:"https://yeeplist.page.gd/images/Divine_Intervention.png", 
     title:"Elite Yeep Team", 
-    score:425+335+325+, 
+    score:425+335+325, 
     rank:"https://yeeplist.page.gd/images/Elite.png",  
     categories:[
       {cat:"#1 Wooper", pos:"425 Points", img:"https://yeeplist.page.gd/images/Wooper.png"},
