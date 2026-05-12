@@ -21,8 +21,8 @@ export const players = [
     id:4, 
     name:"Meta_Carp", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Battle Yeep", 
-    score:0+0+60+0+0+0+0+10, 
+    title:"Quit] Retired Battle Yeep", 
+    score:0+0+0+60+0+0+0+10, 
     rank:"https://yeeplist.page.gd/images/Battle.png",
     categories:[
       {cat:".B.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
