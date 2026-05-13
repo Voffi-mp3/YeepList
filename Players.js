@@ -1368,21 +1368,21 @@ export const players = [
     ]
   },	
 	{ 
-    id:75, 
+    id:76, 
     name:"BigTheBiggie", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Elite Yeep", 
-    score:6+6,
+    score:2+6,
     rank:"https://yeeplist.page.gd/images/Elite.png",
     categories:[
       {cat:"Bat PvP", pos:"Low Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Dagger PvP", pos:"Low Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Dagger PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Freeze Glove PvP", pos:"High Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
-      {cat:"Mace PvP", pos:"Low Tier: 7 | Shield", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Shield + Weapon PvP", pos:"Low Tier: 5", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Fire Axe PvP", pos:"High Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Scythe PvP", pos:"High Tier: 6", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Other PvP", pos:"High Tier: 3 | But-jo", img:"https://yeeplist.page.gd/images/TierU.png"}
+      {cat:"Mace PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Fire Axe PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Scythe PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
   },
 	
