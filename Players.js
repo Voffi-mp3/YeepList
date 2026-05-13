@@ -1371,18 +1371,18 @@ export const players = [
     id:76, 
     name:"BigTheBiggie", 
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
-    title:"Elite Yeep", 
+    title:"Newb Yeep", 
     score:2+6,
-    rank:"https://yeeplist.page.gd/images/Elite.png",
+    rank:"https://yeeplist.page.gd/images/Nweb.png",
     categories:[
       {cat:"Bat PvP", pos:"Low Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
-      {cat:"Dagger PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Freeze Glove PvP", pos:"High Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
-      {cat:"Mace PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Shield + Weapon PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Fire Axe PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Scythe PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Other PvP", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
   },
 	
