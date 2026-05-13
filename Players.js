@@ -1388,7 +1388,7 @@ export const players = [
 	{ 
     id:0, 
     name:"TEST", 
-    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    avatar:"https://github.com/Voffi-mp3/YeepList/blob/main/images/minty1.png", 
     title:"Newb Yeep", 
     score:0+1,
     rank:"https://yeeplist.page.gd/images/Newb.png",
