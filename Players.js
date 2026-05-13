@@ -1389,7 +1389,7 @@ export const players = [
     name:"TEST", 
     avatar:"https://github.com/Voffi-mp3/YeepList/blob/main/images/minty1.png?raw=true", 
     title:"Newb Yeep", 
-    score:47554+67455,
+    score:0+0,
     rank:"https://yeeplist.page.gd/images/Newb.png",
     categories:[
       {cat:"Bat PvP", pos:"Low Tier: 0 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
