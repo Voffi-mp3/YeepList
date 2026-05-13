@@ -1385,7 +1385,24 @@ export const players = [
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
   },
-	
+	{ 
+    id:0, 
+    name:"TEST", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:0+1,
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Low Tier: 0 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 0 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
 ];
 
 
