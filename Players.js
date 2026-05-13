@@ -304,8 +304,7 @@ export const players = [
       {cat:"Shield + Weapon PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Scythe PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Scythe_Tier4.png"},
-      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"},
-      {cat:"Credits And Testers", pos:"Tier Tester • Dev", img:"https://yeeplist.page.gd/images/credits.png"}
+      {cat:"Other PvP", pos:"Tier: 4", img:"https://yeeplist.page.gd/images/Tier4.png"}
     ]
   },
   { 
