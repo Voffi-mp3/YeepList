@@ -1402,6 +1402,78 @@ export const players = [
       {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
     ]
   },
+	{ 
+    id:77, 
+    name:"Soybean", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Newb Yeep", 
+    score:10+10,
+    rank:"https://yeeplist.page.gd/images/Newb.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Low Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".O.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"}
+    ]
+  },
+	{ 
+    id:78, 
+    name:"A stack of pancakes", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Elite Yeep", 
+    score:75,
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Low Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".FG.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"Low Tier: 5 | Bat", img:"https://yeeplist.page.gd/images/Tier5.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"}
+    ]
+  },
+	{ 
+    id:79, 
+    name:"Connor", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Elite Yeep", 
+    score:170,
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"Low Tier: 4 | Dual", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:".Freeze Glove PvP.", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 3 | Shield", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:"Fire Axe PvP", pos:"", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"High Tier: 2 | FreezeBat", img:"https://yeeplist.page.gd/images/Tier2.png"}
+    ]
+  },
+	{ 
+    id:80, 
+    name:"theystee", 
+    avatar:"https://yeeplist.page.gd/images/placeholder.png", 
+    title:"Elite Yeep", 
+    score:170,
+    rank:"https://yeeplist.page.gd/images/Elite.png",
+    categories:[
+      {cat:"Bat PvP", pos:"High Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Dagger PvP", pos:"High Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
+      {cat:".Freeze Glove PvP.", pos:"low Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
+      {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Shield + Weapon PvP", pos:"High Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Tier4.png"},
+      {cat:"Fire Axe PvP", pos:"", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
+      {cat:"Other PvP", pos:"low Tier: 3 | Banjo-Dual", img:"https://yeeplist.page.gd/images/Tier3.png"}
+    ]
+  },
 ];
 
 
