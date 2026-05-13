@@ -1375,9 +1375,9 @@ export const players = [
     score:2+6,
     rank:"https://yeeplist.page.gd/images/Newb.png",
     categories:[
-      {cat:"Bat PvP", pos:"Low Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
+      {cat:"Bat PvP", pos:"Low Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier3.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
-      {cat:"Freeze Glove PvP", pos:"High Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier3.png"},
+      {cat:"Freeze Glove PvP", pos:"High Tier: 5 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier5.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S+W.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
