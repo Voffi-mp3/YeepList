@@ -1469,7 +1469,7 @@ export const players = [
       {cat:".Freeze Glove PvP.", pos:"low Tier: 2 | Dual", img:"https://yeeplist.page.gd/images/Freeze_Tier2.png"},
       {cat:".M.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Shield + Weapon PvP", pos:"High Tier: 4 | Shield", img:"https://yeeplist.page.gd/images/Tier4.png"},
-      {cat:"Fire Axe PvP", pos:"", img:"https://yeeplist.page.gd/images/Axe_Tier3.png"},
+      {cat:".F.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:".S.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
       {cat:"Other PvP", pos:"low Tier: 3 | Banjo-Dual", img:"https://yeeplist.page.gd/images/Tier3.png"}
     ]
