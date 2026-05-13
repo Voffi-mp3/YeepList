@@ -1373,7 +1373,7 @@ export const players = [
     avatar:"https://yeeplist.page.gd/images/placeholder.png", 
     title:"Newb Yeep", 
     score:2+6,
-    rank:"https://yeeplist.page.gd/images/Nweb.png",
+    rank:"https://yeeplist.page.gd/images/Newb.png",
     categories:[
       {cat:"Bat PvP", pos:"Low Tier: 3 | Dual", img:"https://yeeplist.page.gd/images/Tier2.png"},
       {cat:".D.", pos:"", img:"https://yeeplist.page.gd/images/TierU.png"},
